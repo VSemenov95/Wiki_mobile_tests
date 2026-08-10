@@ -1,0 +1,92 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def aspectjWeaverVersion = "1.9.22",
+    selenideVersion = "6.13.0",
+    restAssuredVersion = "5.3.0",
+    allureVersion = "2.32.0",
+    junitVersion = "5.9.3",
+    slf4jVersion = "2.0.7"
+
+allure {
+    report {
+        version.set(allureVersion)
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set(allureVersion)
+            }
+        }
+    }
+}
+
+dependencies {
+    testImplementation(
+            "org.aspectj:aspectjweaver:$aspectjWeaverVersion",
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.appium:java-client:8.3.0",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.aeonbits.owner:owner:1.0.4",
+            "io.github.bonigarcia:webdrivermanager:5.2.1",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "commons-io:commons-io:2.11.0"
+    )
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+ tasks.register('browserstack_test', Test) {
+    useJUnitPlatform {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        systemProperty "tag", "browserstack"
+        systemProperty 'file.encoding', 'UTF-8'
+        includeTags("browserstack")
+    }
+}
+
+
+tasks.register('local_test', Test) {
+    useJUnitPlatform {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        systemProperty "tag", "local"
+        systemProperty 'file.encoding', 'UTF-8'
+        includeTags("local")
+    }
+}
+
+/*tasks.register('mobileTest', Test) {
+    def tagValue = (project.findProperty('tag') ?: 'local').toString()
+
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+
+    useJUnitPlatform {
+        includeTags(tagValue)
+    }
+    systemProperty 'tag', tagValue   // важно: именно systemProperty, а не -P — TestBase.java читает System.getProperty("tag")
+} */
