@@ -68,7 +68,6 @@ tasks.withType(Test) {
     }
 }
 
-
 tasks.register('local_test', Test) {
     useJUnitPlatform {
         testClassesDirs = sourceSets.test.output.classesDirs
@@ -78,15 +77,3 @@ tasks.register('local_test', Test) {
         includeTags("local")
     }
 }
-
-/*tasks.register('mobileTest', Test) {
-    def tagValue = (project.findProperty('tag') ?: 'local').toString()
-
-    testClassesDirs = sourceSets.test.output.classesDirs
-    classpath = sourceSets.test.runtimeClasspath
-
-    useJUnitPlatform {
-        includeTags(tagValue)
-    }
-    systemProperty 'tag', tagValue   // важно: именно systemProperty, а не -P — TestBase.java читает System.getProperty("tag")
-} */

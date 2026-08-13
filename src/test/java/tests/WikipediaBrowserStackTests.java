@@ -4,31 +4,31 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.MainScreen;
+import screens.OnboardingScreen;
 import screens.SearchScreen;
 import screens.SettingsScreen;
 
 import static data.TestData.SEARCH_QUERY;
 
 
-public class SearchTests extends TestBase {
+public class WikipediaBrowserStackTests extends TestBase {
 
     SearchScreen searchScreen = new SearchScreen();
     SettingsScreen settingsScreen = new SettingsScreen();
     MainScreen mainScreen = new MainScreen();
+    OnboardingScreen onboardingScreen = new OnboardingScreen();
 
     @Tag("browserstack")
-    @Tag("local")
     @DisplayName("Поиск по валидному запросу и отображение списка результатов")
     @Test
     void successfulSearch() {
         searchScreen.skipStartScreen()
                 .searchInput()
                 .setKeyInput(SEARCH_QUERY)
-                .verifySearchResultsAreDisplayed();
+                .verifySearchResultsAreDisplayed(SEARCH_QUERY);
     }
 
     @Tag("browserstack")
-    @Tag("local")
     @DisplayName("Удаление запроса в строке поиска")
     @Test
     void deletingQuerySearch() {
@@ -40,7 +40,6 @@ public class SearchTests extends TestBase {
     }
 
     @Tag("browserstack")
-    @Tag("local")
     @DisplayName("Переход в настройки Wiki")
     @Test
     void goToSettingsScreen() {
@@ -51,7 +50,6 @@ public class SearchTests extends TestBase {
     }
 
     @Tag("browserstack")
-    @Tag("local")
     @DisplayName("Переход на экран результата")
     @Test
     void successfulGoToResultScreen() {
@@ -60,6 +58,26 @@ public class SearchTests extends TestBase {
                 .setKeyInput(SEARCH_QUERY)
                 .tapFirstSearchResult();
         mainScreen.tapOkAlert();
-        searchScreen.verifyTitleSearchResult();
+        searchScreen.verifyTitleSearchResult(SEARCH_QUERY);
+    }
+
+    @Tag("browserstack")
+    @DisplayName("Проверка экранов onboarding screen")
+    @Test
+    void validateOnboardingScreen() {
+        mainScreen.tapOkAlert();
+        onboardingScreen.validateFirstScreen()
+                .pressNextButtonFirstScreen()
+                .validateSecondScreen()
+                .pressNextButtonSecondScreen()
+                .validateThirdScreen()
+                .pressNextButtonThirdScreen()
+                .validateFourthScreen()
+                .pressNextButtonFourthScreen()
+                .validateFifthScreen()
+                .pressNextButtonFifthScreen()
+                .validateSixthScreen()
+                .pressNextButtonSixthScreen();
+
     }
 }
