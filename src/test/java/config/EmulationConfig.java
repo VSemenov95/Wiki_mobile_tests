@@ -2,9 +2,9 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:local.properties"})
+@Config.Sources({"classpath:emulationemulation.properties"})
 
-public interface LocalConfig extends Config {
+public interface EmulationConfig extends Config {
     @Key("os_version")
     String getPlatformVersion();
 

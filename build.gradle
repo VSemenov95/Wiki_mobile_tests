@@ -58,11 +58,11 @@ tasks.withType(Test) {
     }
 }
 
- tasks.register('browserstack_test', Test) {
+tasks.register('browserstack_test', Test) {
     useJUnitPlatform {
         testClassesDirs = sourceSets.test.output.classesDirs
         classpath = sourceSets.test.runtimeClasspath
-        systemProperty "tag", "browserstack"
+        systemProperty "deviceHost", "browserstack"
         systemProperty 'file.encoding', 'UTF-8'
         includeTags("browserstack")
     }
@@ -72,7 +72,17 @@ tasks.register('local_test', Test) {
     useJUnitPlatform {
         testClassesDirs = sourceSets.test.output.classesDirs
         classpath = sourceSets.test.runtimeClasspath
-        systemProperty "tag", "local"
+        systemProperty 'deviceHost', 'emulation'
+        systemProperty 'file.encoding', 'UTF-8'
+        includeTags("local")
+    }
+}
+
+tasks.register('real_test', Test) {
+    useJUnitPlatform {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        systemProperty "deviceHost", "real"
         systemProperty 'file.encoding', 'UTF-8'
         includeTags("local")
     }

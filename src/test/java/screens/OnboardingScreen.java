@@ -19,7 +19,15 @@ public class OnboardingScreen {
            titleThirdScreenOnboarding = $(byXpath("//android.widget.TextView[@text=\"Read in more than 300 languages\"]")),
            titleFourthScreenOnboarding = $(byXpath("//android.widget.TextView[@text=\"Follow your curiosity\"]")),
            titleFifthScreenOnboarding = $(byXpath("//android.widget.TextView[@text=\"What are you interested in?\"]")),
-           titleSixthScreenOnboarding = $(byXpath("//android.widget.TextView[@text=\"What would you like to see first?\"]"));
+           titleSixthScreenOnboarding = $(byXpath("//android.widget.TextView[@text=\"What would you like to see first?\"]")),
+
+           continueButton = $(byXpath("//android.widget.Button[@resource-id=\"org.wikipedia.alpha:id/fragment_onboarding_forward_button\"]"));
+
+   @Step("Нажать на кнопку Continue")
+   public OnboardingScreen pressContinue() {
+       continueButton.click();
+       return this;
+   }
 
    @Step("Нажать кнопку далее на первом экране")
    public OnboardingScreen pressNextButtonFirstScreen() {

@@ -4,44 +4,44 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import drivers.BrowserStackDriver;
-import drivers.LocalDriver;
+import drivers.EmulationDriver;
+import drivers.RealDeviceDriver;
 import helpers.Attach;
-import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.JavascriptExecutor;
-
-import java.util.Map;
-
-import static com.codeborne.selenide.Selenide.webdriver;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
 
-    public static String tag = System.getProperty("tag");
+    public static String deviceHost = System.getProperty("deviceHost");
 
     @BeforeAll
     static void beforeAll() {
-        switch (tag) {
+        switch (deviceHost) {
             case "browserstack":
                 Configuration.browser = BrowserStackDriver.class.getName();
                 break;
-            case "local":
-                Configuration.browser = LocalDriver.class.getName();
+            case "emulation":
+                Configuration.browser = EmulationDriver.class.getName();
+                break;
+            case "real":
+                Configuration.browser = RealDeviceDriver.class.getName();
                 break;
             default:
                 throw new IllegalStateException(
-                        "Системное свойство 'tag' не задано. Запускайте тесты через " +
-                                "'./gradlew browserstack_test/local_test'" +
-                                "(либо передайте -Dtag=browserstack/local вручную)."
+                        "Системное свойство 'deviceHost' не задано или некорректно. Запускайте тесты через " +
+                                "'./gradlew browserstack_test/local_test/real_test' " +
+                                "(либо передайте -DdeviceHost=browserstack/emulation/real вручную)."
                 );
         }
 
         Configuration.browserSize = null;
+        Configuration.pageLoadTimeout = -1;
+        Configuration.screenshots = false;
         Configuration.timeout = 30000;
     }
 
@@ -53,14 +53,14 @@ public class TestBase {
 
     @AfterEach
     void tearDown() {
-        switch (tag) {
+        switch (deviceHost) {
             case "browserstack":
                 String sessionId = Selenide.sessionId().toString();
-
                 Attach.pageSource();
                 Attach.addVideo(sessionId);
                 break;
-            case "local":
+            case "emulation":
+            case "real":
                 Attach.screenshotAs("Last screenshot");
                 Attach.pageSource();
         }

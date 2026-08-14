@@ -7,65 +7,78 @@ import screens.MainScreen;
 import screens.OnboardingScreen;
 import screens.SearchScreen;
 import screens.SettingsScreen;
-
 import static data.TestData.SEARCH_QUERY;
 
 
-public class WikipediaBrowserStackTests extends TestBase {
-
+public class WikipediaTests extends TestBase {
     SearchScreen searchScreen = new SearchScreen();
     SettingsScreen settingsScreen = new SettingsScreen();
     MainScreen mainScreen = new MainScreen();
     OnboardingScreen onboardingScreen = new OnboardingScreen();
 
+
+    @Tag("local")
     @Tag("browserstack")
     @DisplayName("Поиск по валидному запросу и отображение списка результатов")
     @Test
-    void successfulSearch() {
+    void successfulSearchLocal() {
         searchScreen.skipStartScreen()
+                .tabSearchInputOnMenu()
+                .skipModalWindow()
                 .searchInput()
                 .setKeyInput(SEARCH_QUERY)
                 .verifySearchResultsAreDisplayed(SEARCH_QUERY);
     }
 
+
+    @Tag("local")
     @Tag("browserstack")
     @DisplayName("Удаление запроса в строке поиска")
     @Test
-    void deletingQuerySearch() {
+    void deletingQuerySearchLocal() {
         searchScreen.skipStartScreen()
+                .tabSearchInputOnMenu()
+                .skipModalWindow()
                 .searchInput()
                 .setKeyInput(SEARCH_QUERY)
                 .tapSearchCloseBtn()
                 .verifySearchSrcText();
     }
 
+
+    @Tag("local")
     @Tag("browserstack")
     @DisplayName("Переход в настройки Wiki")
     @Test
-    void goToSettingsScreen() {
-        mainScreen.tapOkAlert()
-                .tapNavMenuBtn();
-        settingsScreen.tapSettings()
-                .checkScreenSetting();
+    void goToSettingsScreenLocal() {
+        searchScreen.skipStartScreen();
+        settingsScreen
+                .clickButtonMore()
+                .clickSettings()
+                .checkTitleSettings();
+
     }
 
+    @Tag("local")
     @Tag("browserstack")
     @DisplayName("Переход на экран результата")
     @Test
-    void successfulGoToResultScreen() {
+    void successfulGoToResultScreenLocal() {
         searchScreen.skipStartScreen()
+                .tabSearchInputOnMenu()
+                .skipModalWindow()
                 .searchInput()
                 .setKeyInput(SEARCH_QUERY)
-                .tapFirstSearchResult();
-        mainScreen.tapOkAlert();
-        searchScreen.verifyTitleSearchResult(SEARCH_QUERY);
+                .tapFirstSearchResult()
+                .skipModalWindowOnResultScreen()
+                .skipModalWindowToolbarSettings()
+                .verifyTitleSearchResult(SEARCH_QUERY);
     }
-
+    @Tag("local")
     @Tag("browserstack")
     @DisplayName("Проверка экранов onboarding screen")
     @Test
     void validateOnboardingScreen() {
-        mainScreen.tapOkAlert();
         onboardingScreen.validateFirstScreen()
                 .pressNextButtonFirstScreen()
                 .validateSecondScreen()
@@ -78,6 +91,5 @@ public class WikipediaBrowserStackTests extends TestBase {
                 .pressNextButtonFifthScreen()
                 .validateSixthScreen()
                 .pressNextButtonSixthScreen();
-
     }
 }
