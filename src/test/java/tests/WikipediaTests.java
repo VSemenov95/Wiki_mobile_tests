@@ -3,7 +3,6 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import screens.MainScreen;
 import screens.OnboardingScreen;
 import screens.SearchScreen;
 import screens.SettingsScreen;
@@ -13,7 +12,6 @@ import static data.TestData.SEARCH_QUERY;
 public class WikipediaTests extends TestBase {
     SearchScreen searchScreen = new SearchScreen();
     SettingsScreen settingsScreen = new SettingsScreen();
-    MainScreen mainScreen = new MainScreen();
     OnboardingScreen onboardingScreen = new OnboardingScreen();
 
 
