@@ -25,7 +25,7 @@
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
 <p align="center">  
-<a href="https://www.jetbrains.com/idea/"><img src="media/icons/intelijidea.png" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://www.jetbrains.com/idea/"><img src="media/icons/intellijidea.png" width="50" height="50"  alt="IDEA"/></a>
 <a href="https://developer.android.com/studio"><img src="media/icons/androidstud.png" width="50" height="50"  alt="androidStudio"/></a>  
 <a href="https://appium.io/"><img src="media/icons/appium.png" width="50" height="50"  alt="appium"/></a>  
 <a href="https://www.browserstack.com/"><img src="media/icons/browsrstc.png" width="50" height="50"  alt="browserstack"/></a>
