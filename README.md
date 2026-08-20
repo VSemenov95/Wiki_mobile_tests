@@ -1,4 +1,7 @@
 # Автоматизированные тесты для мобильного приложения Wiki
+<p align="center">  
+<a href="https://telegram.org/"><img src="media/icons/wiki.jpg" width="500" height="500"  alt="Telegram"/></a>  
+</p>
 
 ## Содержание
 
