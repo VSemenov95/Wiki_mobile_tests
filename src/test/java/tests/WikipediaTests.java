@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,13 +9,15 @@ import screens.SearchScreen;
 import screens.SettingsScreen;
 import static data.TestData.SEARCH_QUERY;
 
-
+@Epic("Рефакторинг мобильного приложения Wiki")
+@Owner("VSSemenov")
 public class WikipediaTests extends TestBase {
     SearchScreen searchScreen = new SearchScreen();
     SettingsScreen settingsScreen = new SettingsScreen();
     OnboardingScreen onboardingScreen = new OnboardingScreen();
 
-
+    @Story("Рефакторинг поля поиска")
+    @Severity(SeverityLevel.CRITICAL)
     @Tag("local")
     @Tag("browserstack")
     @DisplayName("Поиск по валидному запросу и отображение списка результатов")
@@ -28,7 +31,8 @@ public class WikipediaTests extends TestBase {
                 .verifySearchResultsAreDisplayed(SEARCH_QUERY);
     }
 
-
+    @Story("Рефакторинг поля поиска")
+    @Severity(SeverityLevel.CRITICAL)
     @Tag("local")
     @Tag("browserstack")
     @DisplayName("Удаление запроса в строке поиска")
@@ -43,7 +47,8 @@ public class WikipediaTests extends TestBase {
                 .verifySearchSrcText();
     }
 
-
+    @Story("Рефакторинг страницы настроек")
+    @Severity(SeverityLevel.CRITICAL)
     @Tag("local")
     @Tag("browserstack")
     @DisplayName("Переход в настройки Wiki")
@@ -57,6 +62,8 @@ public class WikipediaTests extends TestBase {
 
     }
 
+    @Story("Доработка перехода на экран результатов")
+    @Severity(SeverityLevel.CRITICAL)
     @Tag("local")
     @Tag("browserstack")
     @DisplayName("Переход на экран результата")
@@ -72,6 +79,9 @@ public class WikipediaTests extends TestBase {
                 .skipModalWindowToolbarSettings()
                 .verifyTitleSearchResult(SEARCH_QUERY);
     }
+
+    @Story("Доработка экранов онбординга")
+    @Severity(SeverityLevel.NORMAL)
     @Tag("local")
     @Tag("browserstack")
     @DisplayName("Проверка экранов onboarding screen")
