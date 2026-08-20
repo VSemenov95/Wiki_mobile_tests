@@ -30,7 +30,7 @@
 <a href="https://appium.io/"><img src="media/icons/appium.png" width="50" height="50"  alt="appium"/></a>  
 <a href="https://www.browserstack.com/"><img src="media/icons/browsrstc.png" width="50" height="50"  alt="browserstack"/></a>
 <a href="https://www.java.com/"><img src="media/icons/java.png" width="50" height="50"  alt="Java"/></a>   
-<a href="https://junit.org/junit5/"><img src="media/icons/jUnit5.png" width="50" height="50"  alt="JUnit 5"/></a>  
+<a href="https://junit.org/junit5/"><img src="media/icons/junit5.png" width="50" height="50"  alt="JUnit 5"/></a>  
 <a href="https://gradle.org/"><img src="media/icons/gradle.png" width="50" height="50"  alt="Gradle"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/icons/allure.svg" width="50" height="50"  alt="Allure"/></a>   
 <a href="https://www.jenkins.io/"><img src="media/icons/jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
