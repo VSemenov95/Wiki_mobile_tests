@@ -14,35 +14,27 @@
 
 ## Описание:
 
-Автоматизированные тесты для мобильного приложения Wiki [Яндекс.Самокат](https://qa-scooter.praktikum-services.ru/). Покрытие сценарии:
-1. Успешное заполнение формы *Для кого* после перехода через кнопку *Заказать* в шапке страницы.
-2. Успешное заполнение формы *Для кого* после перехода через кнопку *Заказать* в центре страницы.
-3. Валидация формы *Для кого* при незаполненном поле *Имя* после перехода через кнопку *Заказать* в шапке страницы.
-4. Валидация формы *Для кого* при незаполненном поле *Имя* после перехода через кнопку *Заказать* в центре страницы.
-5. Валидация формы *Для кого* при незаполненном поле *Фамилия* после перехода через кнопку *Заказать* в шапке страницы.
-6. Валидация формы *Для кого* при незаполненном поле *Фамилия* после перехода через кнопку *Заказать* в центре страницы.
-
-**Примечание:**
-1. Для нажатия кнопки *Заказать* в шапке/по центру страницы использован подход параметризации тестов.
-2. Для заполнения поля с типом dropdown использован тип данных enum.
-3. В проекте написаны необходимые pageObject.
-4. Шаги выделены аннотацией @Step("Название теста").
-
+Автоматизированные тесты для мобильного приложения Wiki. Покрытые сценарии:
+1. Поиск по валидному запросу и отображение списка результатов
+2. Удаление запроса в строке поиска
+3. Переход в настройки Wiki
+4. Переход на экран результата
+5. Проверка экранов onboarding screen
 
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
 <p align="center">  
-<a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
-<a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50"  alt="Java"/></a>   
-<a href="https://junit.org/junit5/"><img src="media/logo/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>  
-<a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  
-<a href="https://selenide.org/"><img src="media/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a> 
-<a href="https://qameta.io/"><img src="media/logo/AllureTestops.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
-<a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="https://telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>  
+<a href="https://www.jetbrains.com/idea/"><img src="media/icons/intelijidea.png" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://developer.android.com/studio"><img src="media/icons/androidstud.png" width="50" height="50"  alt="androidStudio"/></a>  
+<a href="https://appium.io/"><img src="media/icons/appium.png" width="50" height="50"  alt="appium"/></a>  
+<a href="https://www.browserstack.com/"><img src="media/icons/browsrstc.png" width="50" height="50"  alt="browserstack"/></a>
+<a href="https://www.java.com/"><img src="media/icons/java.png" width="50" height="50"  alt="Java"/></a>   
+<a href="https://junit.org/junit5/"><img src="media/icons/jUnit5.png" width="50" height="50"  alt="JUnit 5"/></a>  
+<a href="https://gradle.org/"><img src="media/icons/gradle.png" width="50" height="50"  alt="Gradle"/></a>  
+<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/icons/allure.svg" width="50" height="50"  alt="Allure"/></a>   
+<a href="https://www.jenkins.io/"><img src="media/icons/jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
+<a href="https://telegram.org/"><img src="media/icons/telegram.svg" width="50" height="50"  alt="Telegram"/></a>  
 </p>
 
 
