@@ -8,7 +8,7 @@
 * <a href="#description">Описание</a>
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#jenkins">Сборка в Jenkins</a>
-* <a href="#console">Запуск из терминала</a>
+* <a href="#console">Инструкция по запуску из терминала</a>
 * <a href="#allure">Allure отчет</a>
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
@@ -53,6 +53,9 @@ ____
 <a id="console"></a>
 ## Команды для запуска из терминала
 ___
+
+***Подготовка:***
+
 ***Локальный запуск:***
 ```bash  
 gradle clean test
