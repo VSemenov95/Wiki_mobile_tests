@@ -87,7 +87,7 @@ ____
 ### *Allure TestOps Dashboard*
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screen/Test_ops_dashboard.png" width="850">  
+<img title="Allure TestOps Dashboard" src="media/screens/testOpsDash.png" width="850">  
 </p>  
 
 ### *Авто тест-кейсы*
@@ -98,8 +98,8 @@ ____
 
 ____
 <a id="video"></a>
-## <img alt="browserstack" height="25" src="media/video/delete.mp4" width="25"/></a> Пример видео выполнения тестов в browserstack
+## <img alt="browserstack" height="25" src="media/video/deleteSearch.gif" width="25"/></a> Пример видео выполнения тестов в browserstack
 ____
 <p align="center">
-<img title="Selenoid Video" src=media/video/delete.mp4" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src=media/video/deleteSearch.gif" width="550" height="350"  alt="video">   
 </p>
