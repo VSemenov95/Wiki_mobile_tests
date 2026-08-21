@@ -79,7 +79,7 @@ ___
 ### *Тест-кейсы*
 
 <p align="center">  
-<img title="Allure Tests" src="media/screen/Allure_integration.png" width="850">  
+<img title="Allure Tests" src="media/screens/allureScreen.jpg" width="850">  
 </p>
 
 ___
