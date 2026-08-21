@@ -82,7 +82,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards"> Allure TestOps</a>
+## <img alt="Allure" height="25" src="media/icons/testOps.png" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards"> Allure TestOps</a>
 ____
 ### *Allure TestOps Dashboard*
 
@@ -93,7 +93,7 @@ ____
 ### *Авто тест-кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="media/screen/Test_ops_test_case.png" width="850">  
+<img title="Allure TestOps Tests" src="media/screens/testOpsScreen.png" width="850">  
 </p>
 
 ____
