@@ -54,20 +54,22 @@ ____
 ## Команды для запуска из терминала
 ___
 
-***Подготовка:***
-
 ***Локальный запуск:***
-```bash  
-gradle clean test
-```
+**Подготовка:**
+1. Установить [android studio](https://developer.android.com/studio)
+2. В Android studio перейти в SDK Manager и скачать 11 android
+3. В AVD Managr скачать образ Pixel 4 для 11 android
+4. Установить [node.js](https://nodejs.org/en/download)
 
-***Удалённый запуск через Jenkins:***
+**Запуск:**
+1. Запустить [Appium Server](https://github.com/appium/appium): ```appium --base-path /wd/hub```
+2. Запустить эмулятор: ```emulator -avd Pixel_4```
+3. Запустить тесты: ```./gradlew -DdeviceHost=emulator```
+
+
+***Удалённый запуск через browserstack:***
 ```bash  
-clean test
--DbrowserName="$BROWSER_NAME"
--DbrowserVersion="$BROWSER_VERSION"
--DbrowserSize="BROWSER_SIZE"
--DremoteUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub
+./gradlew -DdeviceHost=browserstack
 ```
 ___
 <a id="allure"></a>
