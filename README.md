@@ -11,8 +11,7 @@
 * <a href="#console">Инструкция по запуску из терминала</a>
 * <a href="#allure">Allure отчет</a>
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
-* <a href="#telegram">Уведомление в Telegram при помощи бота</a>
-* <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
+* <a href="#video">Пример видео выполнения тестов в browserstack</a>
   <a id="description"></a>
 
 ## Описание:
@@ -38,7 +37,6 @@
 <a href="https://github.com/"><img src="media/icons/github.png" width="50" height="50"  alt="Github"/></a> 
 <a href="ht[images](images)tps://github.com/allure-framework/allure"><img src="media/icons/allure.png" width="50" height="50"  alt="Allure"/></a>   
 <a href="https://www.jenkins.io/"><img src="media/icons/jenkins.png" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="https://telegram.org/"><img src="media/icons/telegram.png" width="50" height="50"  alt="Telegram"/></a>  
 </p>
 
 
@@ -96,14 +94,6 @@ ____
 
 <p align="center">  
 <img title="Allure TestOps Tests" src="media/screen/Test_ops_test_case.png" width="850">  
-</p>
-
-____
-<a id="telegram"></a>
-## <img alt="Telegram" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
-____
-<p align="center">  
-<img title="Allure Overview Dashboard" src="media/screen/telegram_bot.png" width="550">  
 </p>
 
 ____
