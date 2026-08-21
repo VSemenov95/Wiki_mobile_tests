@@ -34,7 +34,8 @@
 <a href="https://www.browserstack.com/"><img src="media/icons/browsrstc.png" width="50" height="50"  alt="browserstack"/></a>
 <a href="https://www.java.com/"><img src="media/icons/java.png" width="50" height="50"  alt="Java"/></a>   
 <a href="https://junit.org/junit5/"><img src="media/icons/junit5.png" width="50" height="50"  alt="JUnit 5"/></a>  
-<a href="https://gradle.org/"><img src="media/icons/gradle.png" width="50" height="50"  alt="Gradle"/></a>  
+<a href="https://gradle.org/"><img src="media/icons/gradle.png" width="50" height="50"  alt="Gradle"/></a> 
+<a href="https://github.com/"><img src="media/icons/github" width="50" height="50"  alt="Github"/></a> 
 <a href="ht[images](images)tps://github.com/allure-framework/allure"><img src="media/icons/allure.png" width="50" height="50"  alt="Allure"/></a>   
 <a href="https://www.jenkins.io/"><img src="media/icons/jenkins.png" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://telegram.org/"><img src="media/icons/telegram.png" width="50" height="50"  alt="Telegram"/></a>  
