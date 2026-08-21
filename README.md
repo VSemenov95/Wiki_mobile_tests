@@ -73,7 +73,7 @@ ___
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="icons/logo/allure.png" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/9/allure/)</a>
+## <img alt="Allure" height="25" src="media/icons/allure.png" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/9/allure/)</a>
 ___
 
 ### *Тест-кейсы*
