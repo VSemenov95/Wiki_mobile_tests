@@ -52,8 +52,8 @@ ____
 ## Команды для запуска из терминала
 ___
 
-***Локальный запуск:***
-**Подготовка:**
+***Локальный запуск.***
+***Подготовка:***
 1. Установить [android studio](https://developer.android.com/studio)
 2. В Android studio перейти в SDK Manager и скачать 11 android
 3. В AVD Manager скачать образ Pixel 4 для 11 android
