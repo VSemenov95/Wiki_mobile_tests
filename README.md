@@ -101,5 +101,5 @@ ____
 ### *Пример видео выполнения тестов в browserstack*
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/video/deleteSearch.gif" width="550" height="350"  alt="video">   
+<img title="browserstack" src="media/video/deleteSearch.gif" width="350" height="550"  alt="video">   
 </p>
