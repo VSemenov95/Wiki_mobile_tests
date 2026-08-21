@@ -93,7 +93,7 @@ ____
 ### *Авто тест-кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="media/screens/testOpsScreen.png" width="850">  
+<img title="Allure TestOps Tests" src="media/screens/testOpsScreen.jpg" width="850">  
 </p>
 
 ____
