@@ -50,9 +50,6 @@ ____
 <a href="https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/"><img src="media/screens/jenkinsScreen.jpg" alt="Jenkins" width="950"/></a>  
 </p>
 
-
-### **Параметры сборки в Jenkins:**
-
 <a id="console"></a>
 ## Команды для запуска из терминала
 ___
