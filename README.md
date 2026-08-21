@@ -47,7 +47,7 @@ ____
 ## <img alt="Jenkins" height="25" src="media/icons/jenkins.png" width="25"/></a><a name="Сборка"></a> Сборка в [Jenkins](https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/"><img src="media/screens/jenkinsSceen.jpg" alt="Jenkins" width="950"/></a>  
+<a href="https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/"><img src="media/screens/jenkinsScreen.jpg" alt="Jenkins" width="950"/></a>  
 </p>
 
 
