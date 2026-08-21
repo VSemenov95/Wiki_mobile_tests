@@ -44,7 +44,7 @@
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/)</a>
+## <img alt="Jenkins" height="25" src="media/logo/jenkins.png" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/)</a>
 ____
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/"><img src="media/screen/jenkins.png" alt="Jenkins" width="950"/></a>  
