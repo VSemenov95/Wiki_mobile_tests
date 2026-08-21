@@ -98,12 +98,6 @@ ____
 <img title="Allure TestOps Tests" src="media/screen/Test_ops_test_case.png" width="850">  
 </p>
 
-___
-
-<p align="center">  
-<img title="Jira" src="media/screen/Jira_integration.png" width="850">  
-</p>
-
 ____
 <a id="telegram"></a>
 ## <img alt="Telegram" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
@@ -114,8 +108,8 @@ ____
 
 ____
 <a id="video"></a>
-## <img alt="Selenoid" height="25" src="media/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+## <img alt="browserstack" height="25" src="media/video/delete.mp4" width="25"/></a> Пример видео выполнения тестов в browserstack
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/video/example.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src=media/video/delete.mp4" width="550" height="350"  alt="video">   
 </p>
