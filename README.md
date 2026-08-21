@@ -98,7 +98,7 @@ ____
 
 ____
 <a id="video"></a>
-### *Пример видео выполнения тестов в browserstack*
+## <img alt="Jenkins" height="25" src="media/icons/browsrstc.png" width="25"/></a><a name="Сборка"></a> *Пример видео выполнения тестов в browserstack*</a>
 ____
 <p align="center">
 <img title="browserstack" src="media/video/deleteSearch.gif" width="350" height="550"  alt="video">   
