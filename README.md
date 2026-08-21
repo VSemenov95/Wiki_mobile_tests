@@ -58,7 +58,7 @@ ___
 **Подготовка:**
 1. Установить [android studio](https://developer.android.com/studio)
 2. В Android studio перейти в SDK Manager и скачать 11 android
-3. В AVD Managr скачать образ Pixel 4 для 11 android
+3. В AVD Manager скачать образ Pixel 4 для 11 android
 4. Установить [node.js](https://nodejs.org/en/download)
 
 **Запуск:**
@@ -73,7 +73,7 @@ ___
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
+## <img alt="Allure" height="25" src="icons/logo/allure.png" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.qa.guru/view/java-students/job/41_SemenovVS_mobile_tests/9/allure/)</a>
 ___
 
 ### *Тест-кейсы*
